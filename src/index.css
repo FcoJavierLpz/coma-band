@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 20 20 20;
+    --color-secondary: 0 0 0;
+    --color-accent-1: 255 255 0;
+    --color-accent-2: 0 255 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-black text-white font-sans;
+}
+
+.section-title {
+  @apply text-5xl font-bold mb-8 text-accent1 text-center font-metal;
+}
+
+.cta-button {
+  @apply bg-accent2 text-black font-bold py-2 px-4 rounded hover:bg-accent1 transition-colors duration-300;
+}
+
+.font-metal {
+  font-family: 'Metal Mania', cursive;
+}
+
+.text-10xl {
+  font-size: 10rem;
+  line-height: 1;
+}
+
